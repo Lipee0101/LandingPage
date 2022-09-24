@@ -1,3 +1,2 @@
 # LandingPage
-Página inicial sobre evento de arquitetura, ainda em construção!
-
+Landind page sobre evento de tecnologia!
