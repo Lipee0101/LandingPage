@@ -1,154 +1,109 @@
-:root{
-    --primary:#EB1CCC;
-    --secondary: #95989a;
-    --text-color: #fff;
-    --text-secondary: #000;
-    --text-tertiary: #5d5d5d;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechLand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
 
+    <header id="event-description">
+        
+        <div id="disclaimer">
+            <h2>The Future is here!</h2>
+            <p class="about-event">
+                Um evento que revolucionara seu modo de pensar!
+            </p>
+            <p>Data do evento:</p>
+            <p class="event-date">Sabado, 24 de setembro, a partir das 09h</p>
+        </div>
+        
+        <div id="subscription-form">
+            <p>Preencha o formulario para receber os detalhes do evento:</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" name="nome" placeholder="Digite seu nome" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="Digite seu melhor e-mail" />
+                
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="text" name="email" placeholder="Numero de WhatsApp" />
+                </div>
+                
+                
+                    <input type="submit" class="btn" value="Quero me inscrever">
+            </form>
+        </div>
+    
+    </header>
+    <section id="key-benefits">
+        <h2>O que você vai aprender:</h2>
+        <div class="benefits">
+          <div class="benefit">
+            <div id="benefit-1" class="benefit-img"></div>
+            <p>
+              Alguma coisa muito legal, que vai fazer a diferença na vida do
+              participante.
+            </p>
+          </div>
+          <div class="benefit">
+            <div id="benefit-2" class="benefit-img"></div>
+            <p>
+              Alguma coisa muito legal, que vai fazer a diferença na vida do
+              participante.
+            </p>
+          </div>
+          <div class="benefit">
+            <div id="benefit-3" class="benefit-img"></div>
+            <p>
+              Alguma coisa muito legal, que vai fazer a diferença na vida do
+              participante.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="location">
+        <div id="address">
+          <i class="bi bi-geo-alt-fill"></i>
+          <div id="address-details">
+            <p>Rua do evento, 1333</p>
+            <p>Bairro</p>
+            <p>Abertura: 14h</p>
+          </div>
+        </div>
+        <div id="about-location">
+          <h3>Local de destaque</h3>
+          <p>
+            O evento será realizado em um local prestigiado pelos amantes de
+            Design de Interiores, onde teremos exemplos de vários ambientes, tanto
+            internos como externos.
+          </p>
+        </div>
+      </section>
 
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+      <section id="cta">
+        <h3>Gostou? Então se inscreva:</h3>
+        <button class="btn">Solicitar Inscrição</button>
+      </section>
+      
 
-body{
-    padding-bottom: 500px;
-}
+</body>
 
-#event-description {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/img-tech.png);
-    background-position: center;
-    background-size: cover;
-    height: 85vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: var(--text-color);
-}
+ <footer>
+  <footer id="footer">
+    <h3>TechLand</h3>
+    <p>A tecnologia explodindo sua mente!</p>
+    <p><span>Entre em contato:</span> www.techland.com.br</p>
+    <p><span>Ou pelo telefone:</span> (51)99990-9999</p>
+  </footer>
+ </footer>
 
-#disclaimer h2,
-#disclaimer.event-date{
-    color: var(--primary);
-}
-
-#disclaimer h2{
-    font-size: 3em;
-    margin-bottom: 1em;
-}
-
-#disclaimer .about-event{
-    font-size: 2em;
-    text-transform: uppercase;
-    max-width: 350px;
-    font-weight: bold;
-    margin-bottom: 1em;
-}
-
-#disclaimer p{
-    font-size: 1.5em;
-    margin-bottom: 5em ;
-}
-
-#disclaimer .event-date{
-    font-weight: bold;
-}
-
-#subscription-form{
-    background-color:var(--secondary);
-    padding: 2em;
-    max-width: 22%;    
-}
-
-#subscription-form p {
-    font-size: 1.5em;
-    color: var(--text-secondary);
-    margin-bottom: 0.9em;
-}
-
-.form-group{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0.5em;
-}
-
-.form-group input,
-.form-group select{
-    padding: 6px 8px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-}
-
-.btn {
-    background-color: var(--primary);
-    color: var(--text-color);
-    text-transform: uppercase;
-    width: 100%;
-    border: none;
-    padding: 12px;
-    cursor: pointer;
-    opacity: 0.8;
-}
-
-.btn:hover{
-    opacity: 0.6;
-}
-#key-benefits h2 {
-    background-color: var(--secondary);
-    text-align: center;
-    padding: 2em;
-    font-weight: 500;
-  }
-
-.benefits {
-    display: flex;
-    justify-content: space-around;
-    padding: 4em;
-    width: 80%;
-    margin: 0 auto;
-  }
-
- .benefit {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 20%;
-    color: var(--text-tertiary);
-  }
-
-  .benefit .benefit-img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 1em;
-  }
-  
-  #benefit-1 {
-    background-image: url(img/img1.jfif);
-  }
-  
-  #benefit-2 {
-    background-image: url(img/img3.jpg);
-  }
-  #benefit-3 {
-    background-image: url(img/img4.jfif);
-  }
-
-  #location {
-    height: 400px;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url(img/img-tech-2.png);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: var(--text-color);
-    margin-bottom: 3em;
-  }
+</html>
